@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calculadora de porções para pizza</title>
+  <meta name="description" content="Ferramenta gratuita: calcule quantas pizzas pedir para um grupo com base em adultos e crianças.">
+</head>
+<body>
+  <main style="font-family: sans-serif; padding:20px; max-width:600px; margin:auto;">
+    <h1>Calculadora de porções</h1>
+    <p>Resposta curta: insira número de adultos e crianças para obter quantidade recomendada de pizzas.</p>
+    <label>Adultos: <input id="adultos" type="number" value="4" min="0"></label><br>
+    <label>Crianças: <input id="criancas" type="number" value="2" min="0"></label><br>
+    <label>Fatias por pizza: <input id="fatias" type="number" value="8" min="4"></label><br>
+    <button id="calc">Calcular</button>
+    <h2 id="resultado" aria-live="polite"></h2>
+
+    <svg id="pizzaGraph" width="300" height="300" viewBox="0 0 42 42" style="display:block; margin-top:20px"></svg>
+  </main>
+
+  <script>
+    function drawPie(percent){
+      const svg = document.getElementById('pizzaGraph');
+      svg.innerHTML = '';
+      const circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+      circle.setAttribute('r','15');
+      circle.setAttribute('cx','21');
+      circle.setAttribute('cy','21');
+      circle.setAttribute('fill','#ffe6cc');
+      svg.appendChild(circle);
+      const slice = document.createElementNS('http://www.w3.org/2000/svg','path');
+      const end = percent/100 * Math.PI*2 - Math.PI/2;
+      const large = percent>50?1:0;
+      const x = 21 + 15*Math.cos(end);
+      const y = 21 + 15*Math.sin(end);
+      const d = `M21 21 L21 6 A15 15 0 ${large} 1 ${x} ${y} Z`;
+      slice.setAttribute('d', d);
+      slice.setAttribute('fill','#e74c3c');
+      svg.appendChild(slice);
+    }
+
+    document.getElementById('calc').addEventListener('click', ()=>{
+      const adultos = Number(document.getElementById('adultos').value) || 0;
+      const criancas = Number(document.getElementById('criancas').value) || 0;
+      const fatias = Number(document.getElementById('fatias').value) || 8;
+      const pessoasEquivalentes = adultos + criancas*0.5;
+      const fatiasNecessarias = Math.ceil(pessoasEquivalentes * 3); // média 3 fatias por adulto
+      const pizzas = Math.max(1, Math.ceil(fatiasNecessarias / fatias));
+      document.getElementById('resultado').textContent = `Recomendado: ${pizzas} pizza(s) — ${fatiasNecessarias} fatias no total.`;
+      const percent = Math.min(100, Math.round((fatiasNecessarias / (pizzas*fatias))*100));
+      drawPie(percent);
+    });
+
+    // desenhar estado inicial
+    document.getElementById('calc').click();
+  </script>
+</body>
+</html>

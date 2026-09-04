@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vorg Web Software — sites sob medida</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vorg Web Software — sites sob medida</title>
+  <!-- Resposta direta à intenção de busca: quem precisa de site sob medida -->
+  <meta name="description" content="Precisa de um site sob medida? Criamos sites rápidos, otimizados para SEO e Core Web Vitals, prontos para converter clientes." />
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="/index.html">
+  <link rel="alternate" type="application/rss+xml" title="Vorg - Sitemap" href="/sitemap.xml">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Vorg Web Software">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vorg Web Software — sites sob medida">
+  <meta property="og:description" content="Criamos sites rápidos e otimizados para SEO e Core Web Vitals.">
+
+  <!-- JSON-LD: Organization & WebSite (substitua example.com pela URL real) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type": "Organization", "@id": "https://example.com/#org", "name": "Vorg Web Software", "url": "https://example.com/", "logo": "https://example.com/imagens/logo.png", "sameAs": []},
+      {"@type": "WebSite", "@id": "https://example.com/#website", "url": "https://example.com/", "name": "Vorg Web Software", "publisher": {"@id": "https://example.com/#org"}}
+    ]
+  }
+  </script>
+
 </head>
 <body>
 
@@ -15,7 +40,7 @@
   <header class="site-header">
     <div class="container">
       <a href="#top" class="brand">
-        <img src="imagens/logo.png" alt="Vorg Web Software">
+        <img src="imagens/logo.png" alt="Vorg Web Software" loading="lazy">
         <span>Vorg Web Software</span>
       </a>
       <nav class="main-nav">
@@ -154,7 +179,7 @@
 
       <div class="work-card">
         <div class="work-thumb">
-          <img src="imagens/pizzaria.png" alt="Prévia do site Pizza Bella">
+          <img src="imagens/pizzaria.png" alt="Prévia do site Pizza Bella" loading="lazy">
         </div>
         <div class="work-body">
           <span class="work-cat">Front End Avançado</span>
@@ -166,7 +191,7 @@
 
       <div class="work-card">
         <div class="work-thumb">
-          <img src="imagens/hamburgueria.png" alt="Prévia do site de hamburgueria">
+          <img src="imagens/hamburgueria.png" alt="Prévia do site de hamburgueria" loading="lazy">
         </div>
         <div class="work-body">
           <span class="work-cat">Front End Essencial</span>
@@ -178,7 +203,7 @@
 
       <div class="work-card">
         <div class="work-thumb">
-          <img src="imagens/academia.png" alt="Prévia do site Iron Fitness">
+          <img src="imagens/academia.png" alt="Prévia do site Iron Fitness" loading="lazy">
         </div>
         <div class="work-body">
           <span class="work-cat">Front End Avançado</span>
@@ -245,7 +270,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>
