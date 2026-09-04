@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vorg Web Software — sites sob medida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#top" class="brand">
+        <img src="/imagens/logo.png" alt="Vorg Web Software">
+        <span>Vorg Web Software</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#planos">Planos</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#planos" class="nav-cta">Pedir orçamento</a>
+      <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-shard" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-copy">
+        <span class="hero-tag">Projeto aberto · pronto pra construir</span>
+        <h1>A gente constrói o seu site do zero</h1>
+        <p>Do HTML e CSS mais direto ao ponto até estrutura completa com back-end. Cada projeto no tamanho certo pro seu momento.</p>
+        <div class="hero-actions">
+          <a href="#planos" class="btn-primary">Ver planos e preços</a>
+          <a href="#trabalhos" class="btn-ghost-light">Ver trabalhos feitos</a>
+        </div>
+      </div>
+    </div>
+    <div class="price-stamp">
+      <small>a partir de</small>
+      <strong>R$175</strong>
+    </div>
+  </section>
+
+  <!-- ================= PLANOS (CUBO) ================= -->
+  <section class="section plans-section" id="planos">
+    <div class="container">
+      <div class="plan-nav-row">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>Escolha o tamanho certo pro seu projeto</h2>
+          <p>Quatro níveis de construção, do front-end enxuto até estrutura completa com back-end.</p>
+        </div>
+      </div>
+
+      <div class="drag-hint">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 10h16M6 5l-4 5 4 5M14 5l4 5-4 5" stroke="#8A8484" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Arraste o cubo com o mouse ou o dedo pra ver cada plano
+      </div>
+
+      <div class="cube-arena">
+        <button class="arena-arrow" id="cubePrev" aria-label="Plano anterior">
+          <svg width="18" height="18" viewBox="0 0 18 18"><path d="M11 4L6 9L11 14" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="cube-stage" id="cubeStage">
+          <div class="cube" id="cube">
+
+            <div class="cube-face">
+              <span class="face-rev">Rev. 01 / 04</span>
+              <h3>Front End Essencial</h3>
+              <div class="face-price">R$175 – R$300</div>
+              <p>Site em HTML e CSS, direto ao ponto, pra quem precisa estar online com uma apresentação limpa.</p>
+              <ul class="face-features">
+                <li>Layout responsivo (celular e computador)</li>
+                <li>Até 3 seções / páginas simples</li>
+                <li>Formulário de contato básico</li>
+              </ul>
+              <a href="#contato" class="face-cta">Quero esse plano</a>
+            </div>
+
+            <div class="cube-face">
+              <span class="face-rev">Rev. 02 / 04</span>
+              <h3>Front End Avançado</h3>
+              <div class="face-price">R$300 – R$500</div>
+              <p>Mais páginas, interações e detalhes de animação pra um site com cara mais profissional.</p>
+              <ul class="face-features">
+                <li>Até 6 páginas ou seções</li>
+                <li>Animações e microinterações em JavaScript</li>
+                <li>Otimizado pra buscadores (SEO básico)</li>
+              </ul>
+              <a href="#contato" class="face-cta">Quero esse plano</a>
+            </div>
+
+            <div class="cube-face">
+              <span class="face-rev">Rev. 03 / 04</span>
+              <h3>Back&amp;Front End Essencial</h3>
+              <div class="face-price">R$500 – R$700</div>
+              <p>Estrutura com back-end simples: seu site passa a guardar e organizar informação de verdade.</p>
+              <ul class="face-features">
+                <li>Banco de dados simples (formulários, cadastros)</li>
+                <li>Painel básico de administração</li>
+                <li>Front-end avançado incluso</li>
+              </ul>
+              <a href="#contato" class="face-cta">Quero esse plano</a>
+            </div>
+
+            <div class="cube-face">
+              <span class="face-rev">Rev. 04 / 04</span>
+              <h3>Back&amp;Front Avançado</h3>
+              <div class="face-price">R$700 – R$1000</div>
+              <p>Estrutura completa: autenticação, integrações e um back-end preparado pra crescer junto com o negócio.</p>
+              <ul class="face-features">
+                <li>Login e área de usuário</li>
+                <li>Integrações (pagamento, e-mail, APIs)</li>
+                <li>Painel administrativo completo</li>
+              </ul>
+              <a href="#contato" class="face-cta">Quero esse plano</a>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="arena-arrow" id="cubeNext" aria-label="Próximo plano">
+          <svg width="18" height="18" viewBox="0 0 18 18"><path d="M7 4L12 9L7 14" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="cube-controls">
+        <div class="revision-list" role="tablist" aria-label="Selecionar plano">
+          <button class="revision-dot active" data-index="0">Rev. 01</button>
+          <button class="revision-dot" data-index="1">Rev. 02</button>
+          <button class="revision-dot" data-index="2">Rev. 03</button>
+          <button class="revision-dot" data-index="3">Rev. 04</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ================= TRABALHOS FICTÍCIOS ================= -->
+<section class="section" id="trabalhos">
+  <div class="container">
+    <div class="section-head">
+      <h2>Alguns projetos que já construímos</h2>
+      <p>Uma amostra de sites que desenvolvemos, de páginas simples a estruturas completas.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <div class="work-card">
+        <div class="work-thumb">
+          <img src="/imagens/pizzaria.png" alt="Prévia do site Pizza Bella">
+        </div>
+        <div class="work-body">
+          <span class="work-cat">Front End Avançado</span>
+          <h3>Pizza Bella</h3>
+          <p>Landing page de pizzaria com seção institucional, cardápio filtrável por categoria e SEO básico configurado.</p>
+          <a href="pizzaria.html" class="work-link">Ver site</a>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-thumb">
+          <img src="/imagens/hamburgueria.png" alt="Prévia do site de hamburgueria">
+        </div>
+        <div class="work-body">
+          <span class="work-cat">Front End Essencial</span>
+          <h3>Hamburgueria</h3>
+          <p>Página direta ao ponto pra hamburgueria, com destaque de cardápio em cards e visual escuro contrastado.</p>
+          <a href="hamburgueria.html" class="work-link">Ver site</a>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-thumb">
+          <img src="/imagens/academia.png" alt="Prévia do site Iron Fitness">
+        </div>
+        <div class="work-body">
+          <span class="work-cat">Front End Avançado</span>
+          <h3>Iron Fitness</h3>
+          <p>Site de academia com header fixo animado ao rolar, seção de diferenciais e planos de assinatura comparados.</p>
+          <a href="academia.html" class="work-link">Ver site</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-final" id="contato">
+    <div class="container">
+      <h2>Vamos colocar seu site de pé?</h2>
+      <p>Conta pra gente o que você precisa e a gente monta o orçamento certo pro seu projeto.</p>
+      <a href="mailto:vorgwebsuport@gmail.com" class="btn-primary">Falar com a Vorg</a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand">
+            <img src="/imagens/logo.png" alt="Vorg Web Software">
+            <span>Vorg Web Software</span>
+          </a>
+          <p>Sites construídos sob medida, do front-end simples à estrutura completa com back-end.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Planos</h4>
+          <ul>
+            <li><a href="#planos">Front End Essencial</a></li>
+            <li><a href="#planos">Front End Avançado</a></li>
+            <li><a href="#planos">Back&amp;Front Essencial</a></li>
+            <li><a href="#planos">Back&amp;Front Avançado</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#trabalhos">Trabalhos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:vorgwebsuport@gmail.com">vorgwebsuport@gmail.com</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Vorg Web Software. Todos os direitos reservados.</span>
+        <span>Construído com estrutura de verdade.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

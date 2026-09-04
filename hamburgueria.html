@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Landing page | Hambúrguer Artesanal</title>
+    <meta name="description" content="Experimente o melhor hambúrguer artesanal da região. Blends suculentos, ingredientes selecionados e entrega rápida. Peça já o seu!">
+    <meta name="keywords" content="hambúrguer artesanal, hamburgueria, delivery de hambúrguer, smash burger, pedir lanche">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.exemplodelandingpage.com.br/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ff9f1c;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ff9f1c;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop') center/cover;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff9f1c;
+            color: #121212;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffb74d;
+        }
+
+        .menu-section {
+            margin-bottom: 60px;
+        }
+
+        .menu-section h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ff9f1c;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #333;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card-description {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card-price {
+            font-size: 1.3rem;
+            color: #ff9f1c;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exemplo de Landing page</h1>
+        <p>Para hamburguerias</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero">
+            <h2>O Burger Perfeito Existe</h2>
+            <p>Artesanal, suculento e preparado com ingredientes selecionados. Peça o seu agora mesmo.</p>
+            <a href="#" class="btn" title="Ir para o cardápio completo">Ver Cardápio Completo</a>
+        </section>
+
+        <section class="menu-section">
+            <h3>Destaques do Cardápio</h3>
+            
+            <div class="grid">
+                <article class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500&auto=format&fit=crop');" role="img" aria-label="Hambúrguer Clássico Smash"></div>
+                    <div class="card-content">
+                        <h4 class="card-title">Clássico Smash</h4>
+                        <p class="card-description">Dois blends de 80g prensados na chapa, queijo cheddar derretido, maionese artesanal e pão brioche selado na manteiga.</p>
+                        <div class="card-price">R$ 28,90</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1553979459-d2229ba7433b?q=80&w=500&auto=format&fit=crop');" role="img" aria-label="Hambúrguer Bacon Supreme"></div>
+                    <div class="card-content">
+                        <h4 class="card-title">Bacon Supreme</h4>
+                        <p class="card-description">Blend da casa de 150g, muito bacon crocante, queijo prato, alface fresca, tomate e molho barbecue especial.</p>
+                        <div class="card-price">R$ 34,90</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=500&auto=format&fit=crop');" role="img" aria-label="Hambúrguer Duplo Cheddar"></div>
+                    <div class="card-content">
+                        <h4 class="card-title">Duplo Cheddar</h4>
+                        <p class="card-description">Dois blends de 150g, dobro de queijo cheddar, cebola caramelizada e a nossa exclusiva maionese da casa.</p>
+                        <div class="card-price">R$ 39,90</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Exemplo de Landing page. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Fitness | Alta Performance & Resultados Extremos</title>
+    <meta name="description" content="Transforme seu corpo e mente na Iron Fitness. A melhor infraestrutura, treinadores de elite e planos personalizados para você alcançar sua alta performance.">
+    <meta name="keywords" content="academia, musculação, treino funcional, hipertrofia, emagrecimento, crossfit, condicionamento físico, Iron Fitness">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.ironfitnessficticia.com.br">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Iron Fitness | Alta Performance & Resultados Extremos">
+    <meta property="og:description" content="A infraestrutura que você precisa para alcançar o próximo nível. Venha treinar na Iron Fitness.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://www.ironfitnessficticia.com.br">
+    <meta property="og:site_name" content="Iron Fitness">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #ff3e3e;
+            --dark-bg: #0b0b0b;
+            --card-bg: #161616;
+            --text-light: #ffffff;
+            --text-gray: #a0a0a0;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        /* Header & Navegação */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 8%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        header.sticky {
+            background-color: rgba(11, 11, 11, 0.95);
+            padding: 15px 8%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .cta-header {
+            background-color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+
+        .cta-header:hover {
+            background-color: #d62828;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section (Acessibilidade de Título H1 para SEO) */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 8%;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .btn-main {
+            background-color: var(--primary);
+            color: var(--text-light);
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgba(255, 62, 62, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-main:hover {
+            background-color: #d62828;
+            transform: translateY(-3px);
+        }
+
+        /* Seções Gerais */
+        section {
+            padding: 100px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        .section-title span {
+            color: var(--primary);
+        }
+
+        /* Diferenciais / Benefícios */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 4px solid transparent;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Planos de Assinatura */
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .plan-card {
+            background-color: var(--card-bg);
+            padding: 50px 40px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .plan-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .plan-card h3 {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .plan-price span {
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 400;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .plan-features li {
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .plan-features i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* Rodapé / Footer */
+        footer {
+            background-color: #050505;
+            padding: 40px 8%;
+            text-align: center;
+            border-top: 1px solid #1c1c1c;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        footer p span {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            header { padding: 20px 4%; }
+            header nav, header .cta-header { display: none; } /* Menu hamburguer simplificado ficaria aqui */
+            .hero h1 { font-size: 2.8rem; }
+            section { padding: 60px 4%; }
+            .plan-card.featured { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar">
+        <a href="#" class="logo">Iron<span>Fitness</span></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#beneficios">Diferenciais</a></li>
+                <li><a href="#planos">Planos</a></li>
+            </ul>
+        </nav>
+        <a href="#planos" class="cta-header">Matricule-se</a>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Construa Sua Melhor Versão Na <span>Iron Fitness</span></h1>
+        <p>Treine com os melhores profissionais, utilize equipamentos de última geração e faça parte de uma comunidade focada em resultados de verdade.</p>
+        <a href="#planos" class="btn-main">Começar Agora</a>
+    </section>
+
+    <section id="beneficios">
+        <h2 class="section-title">Por Que Escolher A <span>Iron?</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Equipamentos Premium</h3>
+                <p>Maquinário importado de última geração para isolar e trabalhar a musculatura de forma correta e segura.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-user-ninja"></i>
+                <h3>Treinadores Elite</h3>
+                <p>Nossa equipe conta com profissionais certificados prontos para montar o treino ideal para o seu objetivo.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Acesso Livre 24h</h3>
+                <p>Treine no seu próprio ritmo, a hora que quiser. Seus resultados não precisam esperar o relógio bater.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" style="background-color: #101010;">
+        <h2 class="section-title">Nossos <span>Planos</span></h2>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <h3>Plano Iron</h3>
+                <div class="plan-price">R$ 99<span>/mês</span></div>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> Acesso à área de musculação</li>
+                    <li><i class="fa-solid fa-check"></i> Armários e vestiário premium</li>
+                    <li><i class="fa-solid fa-check"></i> Aplicativo de treinos exclusivo</li>
+                </ul>
+                <a href="#" class="btn-main" style="display: block; text-align: center;">Assinar</a>
+            </div>
+
+            <div class="plan-card featured">
+                <div class="badge">Mais Vendido</div>
+                <h3>Plano Iron VIP</h3>
+                <div class="plan-price">R$ 149<span>/mês</span></div>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> Tudo do Plano Iron</li>
+                    <li><i class="fa-solid fa-check"></i> Acesso Livre 24 horas</li>
+                    <li><i class="fa-solid fa-check"></i> Todas as aulas coletivas (Dance, Cross, Yoga)</li>
+                    <li><i class="fa-solid fa-check"></i> 1 Avaliação Física Mensal inclusa</li>
+                </ul>
+                <a href="#" class="btn-main" style="display: block; text-align: center;">Assinar VIP</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <span>Iron Fitness</span>. Todos os direitos reservados. Landing Page Fictícia para Fins Demonstrativos.</p>
+    </footer>
+
+    <script>
+        // Efeito Sticky no Menu ao Rolar a Página
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+        // Relação amigável de links internos (Scroll Suave Seguro)
+        document.querySelectorAll('nav a, .btn-main, .cta-header').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if(targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
