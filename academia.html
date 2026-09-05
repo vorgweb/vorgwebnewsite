@@ -70,6 +70,7 @@
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 1px;
+            color: rgb(36, 36, 255);
         }
 
         .logo span {
@@ -366,7 +367,7 @@
                     <li><i class="fa-solid fa-check"></i> Armários e vestiário premium</li>
                     <li><i class="fa-solid fa-check"></i> Aplicativo de treinos exclusivo</li>
                 </ul>
-                <a href="#" class="btn-main" style="display: block; text-align: center;">Assinar</a>
+                <button href="#" class="btn-main" style="display: block; text-align: center; border: none; cursor: pointer;" onclick="aviso()">Assinar</button>
             </div>
 
             <div class="plan-card featured">
@@ -379,7 +380,7 @@
                     <li><i class="fa-solid fa-check"></i> Todas as aulas coletivas (Dance, Cross, Yoga)</li>
                     <li><i class="fa-solid fa-check"></i> 1 Avaliação Física Mensal inclusa</li>
                 </ul>
-                <a href="#" class="btn-main" style="display: block; text-align: center;">Assinar VIP</a>
+                <button class="btn-main" style="display: block; text-align: center; border: none; cursor: pointer;" onclick="aviso()">Assinar VIP</button>
             </div>
         </div>
     </section>
@@ -389,6 +390,11 @@
     </footer>
 
     <script>
+
+       async function aviso() {
+        alert("Aviso: Esta landing page é fictícia e foi criada apenas para fins de demonstração. Nenhuma transação real será processada, então não é possivel realizar pagamentos ou matrículas. Qualquer informação fornecida não será armazenada ou utilizada para fins comerciais.");
+       }
+
         // Efeito Sticky no Menu ao Rolar a Página
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');

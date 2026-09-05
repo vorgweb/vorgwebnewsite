@@ -8,36 +8,36 @@
   <url>
     <loc>/pizzaria.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>/hamburgueria.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>/academia.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>/artigos/pizzaria-seo.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>/artigos/cardapio-otimizado.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>/artigos/entrega-otimizada.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>/ferramentas/calculadora-porcoes.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.0</priority>
   </url>
 </urlset>
